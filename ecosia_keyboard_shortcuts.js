@@ -41,7 +41,7 @@ document.addEventListener("keydown", e => {
 			moveSelectionTo(selected - 1);
 		} else if (!isNaN(e.key)) {
 			if (e.key == 0) {
-				moveSelectionTo(10);
+				moveSelectionTo(9);
 			} else {
 				moveSelectionTo(e.key - 1)
 			}
