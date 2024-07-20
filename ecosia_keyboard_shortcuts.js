@@ -43,7 +43,7 @@ document.addEventListener("keydown", e => {
 			if (e.key == 0) {
 				moveSelectionTo(10);
 			} else {
-				moveSelectionTo(e.key)
+				moveSelectionTo(e.key - 1)
 			}
 		} else if (e.key == searchKey) {
 			e.preventDefault();
