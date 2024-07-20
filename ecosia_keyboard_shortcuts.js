@@ -39,6 +39,12 @@ document.addEventListener("keydown", e => {
 			moveSelectionTo(selected + 1);
 		} else if (e.key == moveUpKey) {
 			moveSelectionTo(selected - 1);
+		} else if (!isNaN(e.key)) {
+			if (e.key == 0) {
+				moveSelectionTo(10);
+			} else {
+				moveSelectionTo(e.key)
+			}
 		} else if (e.key == searchKey) {
 			e.preventDefault();
 			let startSelection = search.value.length;
